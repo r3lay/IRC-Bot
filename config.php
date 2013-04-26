@@ -14,6 +14,7 @@ return array(
         'Command\Weather' => array(
             'yahooKey' => 'a',
         ),
+		'Command\Fml'    => array(),
         'Command\Joke'    => array(),
         'Command\Ip'      => array(),
         'Command\Imdb'    => array(),
