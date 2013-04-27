@@ -18,6 +18,9 @@ Web
 * !timeout [seconds] - Bot leaves for the specified number of seconds.
 * !restart - Quits and restarts the script.
 * !quit - Quits and stops the script.
+* 
+* !fml - Says random fml quote.
+* !urban [search term] - Says definition of searched term, from urban dictionary.
 
 ### Entended Commands
 
