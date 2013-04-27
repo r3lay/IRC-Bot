@@ -26,6 +26,7 @@ return array(
 		'Command\Urban'    => array(),
         'Command\Quit'    => array(),
         'Command\Restart' => array(),
+		'Command\Wiki' => array(),
     ),
     'listeners' => array(
         'Listener\Joins' => array(),

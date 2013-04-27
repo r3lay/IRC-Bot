@@ -18,7 +18,6 @@ class Twitter extends \Library\IRC\Command\Base {
      * @var string
      */
     protected $help = '!twitter [user]';
-	public $insult = '';
     /**
      * The number of arguments the command needs.
      *
@@ -49,11 +48,11 @@ class Twitter extends \Library\IRC\Command\Base {
 
 		$xml = simplexml_load_file($url) or die();
 
-	   foreach($xml->status as $status)
-	   {
-	   $text = $status->text;
-	   }
-	   $this->say($text);
+		foreach($xml->status as $status)
+		{
+		$text = $status->text;
+		}
+		$this->say($text);
 	   
  	}
     
