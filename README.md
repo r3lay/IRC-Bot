@@ -21,6 +21,7 @@ Web
 * 
 * !fml - Says random fml quote.
 * !urban [search term] - Says definition of searched term, from urban dictionary.
+* !twitter [handle] - Says the last tweet of specified twitter handle.
 
 ### Entended Commands
 
