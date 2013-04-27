@@ -22,6 +22,7 @@ return array(
         'Command\Join'    => array(),
         'Command\Part'    => array(),
         'Command\Timeout' => array(),
+		'Command\Twitter'    => array(),
 		'Command\Urban'    => array(),
         'Command\Quit'    => array(),
         'Command\Restart' => array(),
