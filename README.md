@@ -18,11 +18,6 @@ Web
 * !timeout [seconds] - Bot leaves for the specified number of seconds.
 * !restart - Quits and restarts the script.
 * !quit - Quits and stops the script.
-* 
-* !fml - Says random fml quote.
-* !urban [search term] - Says definition of searched term, from urban dictionary.
-* !twitter [handle] - Says the last tweet of specified twitter handle.
-* !wiki [search term] - Says the first paragraph from a wikipedia search.
 
 ### Entended Commands
 
@@ -31,6 +26,10 @@ Web
 * !poke [#channel] [username] - Pokes the specified IRC user.
 * !joke - Returns random joke. Fetched from [ICNDb.com](http://www.icndb.com/).
 * !imdb [movie title] - Searches for movie and returns it's information.
+* !fml - Says random fml quote.
+* !urban [search term] - Says definition of searched term, from urban dictionary.
+* !twitter [handle] - Says the last tweet of specified twitter handle.
+* !wiki [search term] - Says the first paragraph from a wikipedia search.
 
 
 ### Listeners
