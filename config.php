@@ -18,6 +18,7 @@ return array(
         'Command\Joke'    => array(),
         'Command\Ip'      => array(),
         'Command\Imdb'    => array(),
+		'Command\Movie'    => array(),
         'Command\Poke'    => array(),
         'Command\Join'    => array(),
         'Command\Part'    => array(),
