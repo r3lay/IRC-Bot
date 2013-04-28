@@ -27,8 +27,9 @@ Web
 * !joke - Returns random joke. Fetched from [ICNDb.com](http://www.icndb.com/).
 * !imdb [movie title] - Searches for movie and returns it's information.
 * !fml - Says random fml quote.
-* !urban [search term] - Says definition of searched term, from urban dictionary.
+* !movie [movie title] - Says movie plot,actors and idmb rating of searched term.
 * !twitter [handle] - Says the last tweet of specified twitter handle.
+* !urban [search term] - Says definition of searched term, from urban dictionary.
 * !wiki [search term] - Says the first paragraph from a wikipedia search.
 
 
