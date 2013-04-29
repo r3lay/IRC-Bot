@@ -201,5 +201,46 @@
 
             return $output;
         }
+		/**
+         * Build font codes array
+         *
+         */
+		public $fontselect = array(
+					'c'	=>	"\x03",
+					'n'	=>	"\x0f",
+					'b'	=>	"\x02",
+					'u'	=>	"\x1f",
+					'r'	=>	"\x16"
+		);
+		
+		/** Build color codes array
+        *
+        */
+		public $colorselect = array(
+					'black' => "00",
+					'white' => "01",
+					'blue' => "02",
+					'green' => "03",
+					'red' => "04",
+					'brown' => "05",
+					'purple' => "06",
+					'orange' => "07",
+					'yellow' => "08",
+					'limegreen' => "09",
+					'turquoise' => "10",
+					'cyan' => "11",
+					'lightblue' => "12",
+					'pink' => "13",
+					'grey' => "14",
+					'lightgrey' => "15"
+		);
+		/** Return string with font and font color
+        *@param string $font,$color,$string
+		*EX: $this->fontandcolor('b','blue','i will be bold and blue')
+        *@return string
+        */
+		public function fontandcolor($font,$color,$string){
+			return $this->fontselect[$font].$this->fontselect['c'].$this->colorselect[$color].$string.$this->fontselect['c'].$this->fontselect[$font];
+		}
     }
 ?>
