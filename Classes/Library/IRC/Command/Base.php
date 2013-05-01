@@ -206,11 +206,13 @@
          *
          */
 		public $fontselect = array(
-					'c'	=>	"\x03",
-					'n'	=>	"\x0f",
-					'b'	=>	"\x02",
-					'u'	=>	"\x1f",
-					'r'	=>	"\x16"
+					'c'	=>	"\x03", // Color - followed by 2 digit color code
+					'n'	=>	"\x0f", // Reset
+					'b'	=>	"\x02", // Bold
+					'u'	=>	"\x1f", // Underline
+					's'	=>	"\x13", // Strike-Through
+					'i'	=>	"\x09", // Italic
+					'r'	=>	"\x16", // Reverse
 		);
 		
 		/** Build color codes array
@@ -241,6 +243,24 @@
         */
 		public function fontandcolor($font,$color,$string){
 			return $this->fontselect[$font].$this->fontselect['c'].$this->colorselect[$color].$string.$this->fontselect['c'].$this->fontselect[$font];
+		}
+		
+		/** Return string with font
+        *@param string $font,$string
+		*EX: $this->fontandcolor('b','i will be bold')
+        *@return string
+        */
+		public function textFont($font,$string){
+			return $this->fontselect[$font].$string.$this->fontselect[$font];
+		}
+		
+		/** Return string with colored font
+        *@param string $color,$string
+		*EX: $this->fontandcolor('cyan','i will be cyan color')
+        *@return string
+        */
+		public function textColor($font,$string){
+			return $this->fontselect['c'].$this->colorselect[$color].$string.$this->fontselect['c'];
 		}
     }
 ?>
